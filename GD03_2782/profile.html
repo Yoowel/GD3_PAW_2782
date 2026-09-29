@@ -83,6 +83,11 @@
             <td>-</td>
         </tr>
     </table>
+
+    <p id="teks">Teks ini bisa berubah!</p>
+    <button onclick="ubahBiru()">Ubah teks menjadi biru</button>
+
+    <br><br>
     <a href="form.html">Form Pendaftaran</a>
 
     <script>
@@ -95,6 +100,11 @@
         }
 
         console.log(sapa("Yoel"));
+
+        function ubahBiru() {
+            const teks = document.getElementById("teks");
+            teks.style.color = "blue";
+        }
 
     </script>
 
