@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="judul">
-        <h1>Yoel</h1>
+        <h1 id="judulHalaman">Yoel</h1>
         <p>Ini adalah contoh halaman HTML sederhana</p>
     </div>
 
@@ -84,5 +84,11 @@
         </tr>
     </table>
     <a href="form.html">Form Pendaftaran</a>
+
+    <script>
+        document.getElementById("judulHalaman").style.color = "red";
+        console.log(document.getElementById("judulHalaman").innerHTML);
+    </script>
+
 </body>
 </html>
