@@ -11,6 +11,12 @@
     <button onclick="ubahBiru()">Ubah teks menjadi biru</button>
 
     <br><br>
+    <label for="inputNama">Masukan nama: </label>
+    <input type="text" id="inputNama">
+    <br>
+    <button onclick="tampilkanNama()">Tampilkan</button>
+
+    <br><br>
     <a href="profile.html">profile</a>
     
     <script>
@@ -27,6 +33,15 @@
         function ubahBiru() {
             const teks = document.getElementById("teks");
             teks.style.color = "blue";
+        }
+
+        function tampilkanNama() {
+            const nama = document.getElementById("inputNama").value;
+            if(nama == "") {
+                alert("Silakan isi nama terlebih dahulu");
+            } else {
+                alert("Halo, " + nama + "!");
+            }
         }
 
     </script>
