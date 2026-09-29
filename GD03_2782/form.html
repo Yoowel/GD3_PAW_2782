@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+</head>
+<body>
+    <h1>Form Pendaftaran</h1>
+
+    <form action="">
+
+        <label for="idNama">Nama : </label>
+        <input type="text" name="nama" id="idNama" required>
+        
+        <br><br>
+        <label>Jenis Kelamin:</label>
+        <input type="radio" name="jenis-kelamin" id="idLelaki" value="lelaki" required>
+        <label for="idLelaki">Laki-laki</label>
+        <input type="radio" name="jenis-kelamin" id="idPerempuan" value="perempuan" required>
+        <label for="idPerempuan">Perempuan</label>
+        
+        <br><br>
+        <label for="idProdi">Program Studi:</label>
+        <select name="program-studi" id="idProdi" required>
+            <option value="">Pilih Program Studi</option>
+            <option value="informatika">Informatika</option>
+            <option value="sistem-informasi">Sistem Informasi</option>
+            <option value="teknologi-informasi">Teknologi Informasi</option>
+        </select>
+        
+        <br><br>
+        <label for="idEmail">Email:</label>
+        <input type="email" name="email" id="idEmail" required>
+        
+        <br><br>
+        <label for="idAlasan">Alasan Mendaftar:</label>
+        <br>
+        <textarea name="alasan" id="idAlasan" rows="5" cols="30"></textarea>
+        
+        <br><br>
+        <button type="submit">Daftar</button>
+
+    </form>
+    <a href="profile.html">Profile</a>
+</body>
+</html>
