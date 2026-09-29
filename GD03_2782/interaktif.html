@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Interaktif</title>
+</head>
+<body>
+    <h1 id="judulHalaman">Halaman Interaktif</h1>
+    <p id="teks">Teks ini bisa berubah!</p>
+    <button onclick="ubahBiru()">Ubah teks menjadi biru</button>
+
+    <br><br>
+    <a href="profile.html">profile</a>
+    
+    <script>
+        
+        document.getElementById("judulHalaman").style.color = "red";
+        console.log(document.getElementById("judulHalaman").innerHTML);
+
+        function sapa(nama) {
+            return "Halo " + nama + "!"; 
+        }
+
+        console.log(sapa("Yoel"));
+
+        function ubahBiru() {
+            const teks = document.getElementById("teks");
+            teks.style.color = "blue";
+        }
+
+    </script>
+</body>
+</html>

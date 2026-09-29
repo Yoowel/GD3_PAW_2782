@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="judul">
-        <h1 id="judulHalaman">Yoel</h1>
+        <h1>Yoel</h1>
         <p>Ini adalah contoh halaman HTML sederhana</p>
     </div>
 
@@ -83,30 +83,9 @@
             <td>-</td>
         </tr>
     </table>
-
-    <p id="teks">Teks ini bisa berubah!</p>
-    <button onclick="ubahBiru()">Ubah teks menjadi biru</button>
-
-    <br><br>
     <a href="form.html">Form Pendaftaran</a>
-
-    <script>
-        
-        document.getElementById("judulHalaman").style.color = "red";
-        console.log(document.getElementById("judulHalaman").innerHTML);
-
-        function sapa(nama) {
-            return "Halo " + nama + "!"; 
-        }
-
-        console.log(sapa("Yoel"));
-
-        function ubahBiru() {
-            const teks = document.getElementById("teks");
-            teks.style.color = "blue";
-        }
-
-    </script>
+    <br>
+    <a href="interaktif.html">Halaman Interaktif</a>
 
 </body>
 </html>
