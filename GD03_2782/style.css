@@ -108,7 +108,7 @@ input, select, textarea {
 
 input:focus, select:focus, textarea:focus {
     outline: none;
-    border-color: darkcyan;
+    border-color: black;
 }
 
 textarea {
@@ -130,7 +130,7 @@ button:hover {
 
 #hasil {
     font-weight: bold;
-    color: darkcyan;
+    color: black;
 }
 
 @media (max-width: 600px) {
