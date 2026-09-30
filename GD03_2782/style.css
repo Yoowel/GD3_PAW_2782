@@ -1,40 +1,159 @@
-body { 
-    font-family: Verdana, sans-serif; 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: black;
 }
 
 h1 { 
-    color: navy; 
+    color: black; 
     text-align: center; 
 }
 
 #judul {
-    color: green;
+    background-color: white;
     text-align: center;
-}
-
-p.bio {
-    color: #444;
-    font-style: italic;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px lightgray;
 }
 
 .kontainer-profil {
     display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px lightgray;
+}
+
+.kontainer-profil img {
+    border-radius: 8px;
+}
+
+.bio {
+    color: black;
+}
+
+ul, ol {
+    background-color: white;
+    padding: 20px 20px 20px 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px lightgray;
+}
+
+li {
+    margin-bottom: 5px;
 }
 
 table {
     width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px lightgray;
+}
+
+th {
+    background-color: darkcyan;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    padding: 8px 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: darkgrey;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 2px 6px lightgray;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 7px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: darkcyan;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: grey;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgrey;
+}
+
+#hasil {
+    font-weight: bold;
+    color: darkcyan;
 }
 
 @media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
     .kontainer-profil {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
     }
+
+    .kontainer-profil img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
     table {
         font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
     }
 }
