@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Interaktif</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="judulHalaman">Halaman Interaktif</h1>
@@ -17,8 +18,19 @@
     <button onclick="tampilkanNama()">Tampilkan</button>
 
     <br><br>
-    <a href="profile.html">profile</a>
-    
+    <h3>Hitung Kuadrat</h3>
+
+    <label for="inputAngka">Masukkan angka: </label>
+    <input type="number" id="inputAngka">
+
+    <button onclick="hitungKuadrat()">Hitung</button>
+
+    <p id="hasil"></p>
+
+    <br><br>
+    <a href="profile.html" onclick="return confirm('Kembali ke halaman Profile?')">Profile</a>
+    <a href="form.html" onclick="return confirm('Pindah ke halaman Form Pendaftaran?')">Form Pendaftaran</a>    
+
     <script>
         
         document.getElementById("judulHalaman").style.color = "red";
@@ -42,6 +54,13 @@
             } else {
                 alert("Halo, " + nama + "!");
             }
+        }
+
+        function hitungKuadrat() {
+            const angka = document.getElementById("inputAngka").value;
+            const hasil = angka * angka;
+
+            document.getElementById("hasil").innerHTML = "Hasil: " + hasil;
         }
 
     </script>
